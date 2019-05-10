@@ -7,8 +7,6 @@ function doubleList(){
         this.prev = null;
         this.next = null;
     }
-    
-
     this.append = function(value){
         let node = new Node(value);
         if(!head){
@@ -25,7 +23,7 @@ function doubleList(){
             tail = node;
         }
         Length++;
-        return 'ok';
+        return {message:'ok'};
     }
     this.getLength = function(){
         return Length;
